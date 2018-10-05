@@ -62,14 +62,19 @@ Install with [npm](https://www.npmjs.com/):
 
 `example1.js`:
 ```js
-// this is example
+// this is example 1
 var a = 1;
 ```
 
 `example2.js`:
 ```js
-// this is example
+// this is example 2
 var b = 1;
+```
+`example3.js`:
+```js
+// this is example 3
+var a = 1;
 ```
 
 CSV results:
@@ -77,16 +82,20 @@ CSV results:
 ```
 $ js-ast-hash test/fixtures/example.js
 "filePath","hash"
+"filePath","hash"
 "test/fixtures/example1.js","3a5c739d9c4b6284c5790de8b557bd3d"
 "test/fixtures/example2.js","da948b06f3c073a32dc6de72e00dbe8f"
+"test/fixtures/example3.js","3a5c739d9c4b6284c5790de8b557bd3d"
 ```
 
 JSON results:
 
 ```
 $ js-ast-hash test/fixtures/ -f json
-[{"filePath":"test/fixtures/example1.js","hash":"3a5c739d9c4b6284c5790de8b557bd3d"},{"filePath":"test/fixtures/example2.js","hash":"da948b06f3c073a32dc6de72e00dbe8f"}]
+[{"filePath":"test/fixtures/example1.js","hash":"3a5c739d9c4b6284c5790de8b557bd3d"},{"filePath":"test/fixtures/example2.js","hash":"da948b06f3c073a32dc6de72e00dbe8f"},{"filePath":"test/fixtures/example3.js","hash":"3a5c739d9c4b6284c5790de8b557bd3d"},]
 ```
+
+`example1.js` and `example3.js` should be same hash value.
 
 ## Changelog
 
