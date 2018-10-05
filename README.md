@@ -9,9 +9,10 @@ This tool is inspired by following article.
 
 ## Features
 
+
 - Output JavaScript AST hash(md5) value
 - Ignore space, break line, and comment of the source code
-
+- Support JavaScript/TypeScript(`.ts` and `.tsx`)
 
 **Ignore comments example:**
 
