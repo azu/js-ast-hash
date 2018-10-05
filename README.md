@@ -82,7 +82,6 @@ CSV results:
 ```
 $ js-ast-hash test/fixtures/example.js
 "filePath","hash"
-"filePath","hash"
 "test/fixtures/example1.js","3a5c739d9c4b6284c5790de8b557bd3d"
 "test/fixtures/example2.js","da948b06f3c073a32dc6de72e00dbe8f"
 "test/fixtures/example3.js","3a5c739d9c4b6284c5790de8b557bd3d"
