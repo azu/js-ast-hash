@@ -1,0 +1,63 @@
+{
+  "name": "js-ast-hash",
+  "version": "1.0.0",
+  "description": "Output hash value of JavaScript AST.",
+  "keywords": [
+    "ast",
+    "compare",
+    "javascript",
+    "tool"
+  ],
+  "homepage": "https://github.com/azu/js-ast-hash",
+  "bugs": {
+    "url": "https://github.com/azu/js-ast-hash/issues"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/js-ast-hash.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/js-ast-hash.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
+  },
+  "dependencies": {
+    "@babel/parser": "^7.1.2",
+    "globby": "^8.0.1",
+    "json2csv": "^4.2.1",
+    "meow": "^5.0.0"
+  },
+  "devDependencies": {
+    "husky": "^1.1.0",
+    "lint-staged": "^7.3.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.8.1"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
