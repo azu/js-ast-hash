@@ -74,7 +74,7 @@ var b = 1;
 `example3.js`:
 ```js
 // this is example 3
-var a = 1;
+var a = 1 // code is same with example1
 ```
 
 CSV results:
