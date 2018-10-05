@@ -1,4 +1,4 @@
-# js-ast-hash
+# js-ast-hash [![Build Status](https://travis-ci.org/azu/js-ast-hash.svg?branch=master)](https://travis-ci.org/azu/js-ast-hash)
 
 Output hash value of JavaScript AST.
 This tool help to compare source codes ignoring space, comment.
