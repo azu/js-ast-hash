@@ -2,7 +2,7 @@
 "use strict";
 const meow = require("meow");
 const globby = require("globby");
-const { fileToASTHex } = require("../lib/js-ast-hash.js");
+const { fileToASTHash } = require("../lib/js-ast-hash.js");
 
 const cli = meow(
     `
@@ -32,7 +32,7 @@ const targetFiles = globby.sync(cli.input);
 const hashMap = targetFiles.map(filePath => {
     return {
         filePath,
-        hash: fileToASTHex(filePath)
+        hash: fileToASTHash(filePath)
     }
 });
 if (cli.flags.format === "json") {
