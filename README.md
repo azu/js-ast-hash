@@ -3,7 +3,7 @@
 Output hash value of JavaScript AST.
 This tool help to compare source codes ignoring space, comment.
 
-This tool inspired by following article.
+This tool is inspired by following article.
 
 - [20 万行超のコードベースをテストせずにリファクタリングリリースした話 - MonotaRO Tech Blog](https://tech-blog.monotaro.com/entry/2018/09/26/142451)
 
