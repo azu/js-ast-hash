@@ -20,6 +20,9 @@
     "src/"
   ],
   "main": "lib/js-ast-hash.js",
+  "bin": {
+    "js-ast-hash": "./bin/cmd.js"
+  },
   "directories": {
     "lib": "lib",
     "test": "test"
